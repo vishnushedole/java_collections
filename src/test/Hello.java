@@ -146,7 +146,7 @@ public class Hello {
 		Key: 2, value:B
 		Key: 3, value:A
 */
-		// Stacks 
+		// Stacks (LIFO : Last in first out)
 /*
 		Stack<String> stack = new Stack<String>();
 		stack.push("America");
@@ -160,7 +160,34 @@ public class Hello {
 		India
 		Germany
 		stack: [America, Germany]  */
-				
+		
+		// queue(FIFO : first in first out)
+		/*
+		Queue<String> queue = new PriorityQueue<String>();
+		System.out.println(queue.size());
+		
+		queue.add("India");
+		
+		queue.add("America");
+		queue.add("Germany");
+		
+		System.out.println(queue); // By default print method will call queue.toString() method that will lead to the change in order.
+		
+		System.out.println(queue.peek());
+		
+		System.out.println(queue.remove());
+		
+		System.out.println(queue.poll());
+		
+		System.out.println(queue);
+		
+		output :
+			0
+			[America, India, Germany]
+			America
+			America
+			Germany
+			[India]   */
 	}
 
 }
