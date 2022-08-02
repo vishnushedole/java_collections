@@ -7,7 +7,8 @@ import java.util.*;
 public class Hello {
 	public static void main(String args[])
 	{
-		// ArrayList 
+		//   LIST
+		// 1.ArrayList 
 /*		List<Integer> arraylist = new ArrayList<Integer>();
 		System.out.println(arraylist.size());
 		
@@ -25,7 +26,7 @@ public class Hello {
 			0 1 2 4 4
 			[0, 1, 2, 4]
 */
-		// Linked List
+		// 2.Linked List
 		
 	/*	LinkedList<String> list = new LinkedList<String>();
 		list.add("A");
@@ -48,7 +49,7 @@ public class Hello {
 		D
 		[B, D, E, G]  */
 		
-		// vector
+		// 3.vector
 /*		Vector<String> vec = new Vector<String>();
 		vec.add("a");
 		vec.add("b");
@@ -69,11 +70,66 @@ public class Hello {
 			[]	
 			
 			*/
-		// Hashset
+		
+		  
+		// 	QUEUE	(FIFO : first in first out)
+				/*    1.
+				Queue<String> queue = new PriorityQueue<String>();
+				System.out.println(queue.size());
+				
+				queue.add("India");
+				
+				queue.add("America");
+				queue.add("Germany");
+				
+				System.out.println(queue); // By default print method will call queue.toString() method that will lead to the change in order.
+				
+				System.out.println(queue.peek());
+				
+				System.out.println(queue.remove());
+				
+				System.out.println(queue.poll());
+				
+				System.out.println(queue);
+				
+				output :
+					0
+					[America, India, Germany]
+					America
+					America
+					Germany
+					[India]   */
+		
+		 // 2. PRIORITY QUEUE (automatically sorts the elements.
+/*		PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
+		System.out.println(pq.size());
+		for(int i=10;i>0;i--)
+		pq.add(i);
+		
+		System.out.println(pq);
+		pq.remove(1);
+		System.out.println(pq.peek());
+		System.out.println(pq.poll());
+		
+		System.out.println(pq);
+		
+		output :
+		0
+        [1, 2, 5, 4, 3, 9, 6, 10, 7, 8]
+        2
+        2
+        [3, 4, 5, 7, 8, 9, 6, 10]
+        
+		*/
+		
+		//  SET
+		// Hashset (output is unordered due to hashing
 		
 	/*	HashSet<String> hashset = new HashSet<String>();
 		
 		hashset.add("A");
+		hashset.add("B");
+		hashset.add("B");
 		hashset.add("B");
 		System.out.println(hashset.add("C"));
 		System.out.println(hashset.add("C"));
@@ -85,10 +141,10 @@ public class Hello {
 		}
 		
 		output :
-		true 
-        false 
+		true
         false
-        [A, B, C]A B C   */
+        false
+        [A, B, C]A B C    */
 		
 		
 		// Tree set (used to mantain natural ordering of elements)
@@ -182,33 +238,7 @@ public class Hello {
 		Germany
 		stack: [America, Germany]  */
 		
-		// queue(FIFO : first in first out)
-		/*
-		Queue<String> queue = new PriorityQueue<String>();
-		System.out.println(queue.size());
 		
-		queue.add("India");
-		
-		queue.add("America");
-		queue.add("Germany");
-		
-		System.out.println(queue); // By default print method will call queue.toString() method that will lead to the change in order.
-		
-		System.out.println(queue.peek());
-		
-		System.out.println(queue.remove());
-		
-		System.out.println(queue.poll());
-		
-		System.out.println(queue);
-		
-		output :
-			0
-			[America, India, Germany]
-			America
-			America
-			Germany
-			[India]   */
 	}
 
 }
