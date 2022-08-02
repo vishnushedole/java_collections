@@ -48,6 +48,27 @@ public class Hello {
 		D
 		[B, D, E, G]  */
 		
+		// vector
+/*		Vector<String> vec = new Vector<String>();
+		vec.add("a");
+		vec.add("b");
+		vec.add("c");
+		System.out.println(vec);
+		
+		vec.remove(1);
+		System.out.println(vec);
+		vec.remove("c");
+		System.out.println(vec);
+		vec.removeAll(vec);
+		System.out.println(vec);
+		
+		output :
+			[a, b, c]
+			[a, c]
+			[a]
+			[]	
+			
+			*/
 		// Hashset
 		
 	/*	HashSet<String> hashset = new HashSet<String>();
